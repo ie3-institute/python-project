@@ -9,7 +9,7 @@ This repository is marked as a template repository.
 Github offers you the convenient possibility to open a new repository from a such a template repository.
 See [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for details.
 2. Clone your new repository
-3. Rename the `python-template` package to your project name
+3. Rename the `python-project` package to your project name (this is where your source code should go). 
 4. Install the dependencies (preferably within a fresh virtual environment)
 5. Run `pre-commit install`
 6. Enjoy!
