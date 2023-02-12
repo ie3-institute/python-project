@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "transense"
+name = "python-project"
 version = "0.1.0"
 description = ""
 authors = ["Thomas <thomas.oberliessen@googlemail.com>"]
