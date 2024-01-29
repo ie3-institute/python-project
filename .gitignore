@@ -1,5 +1,12 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,python,pycharm,linux,jupyternotebooks
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,python,pycharm,linux,jupyternotebooks
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,python,pycharm,visualstudiocode,linux,jupyternotebooks,direnv,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,python,pycharm,visualstudiocode,linux,jupyternotebooks,direnv,dotenv
+
+### direnv ###
+.direnv
+.envrc
+
+### dotenv ###
+.env
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -296,7 +303,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -335,6 +341,35 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# LSP config files
+pyrightconfig.json
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -361,4 +396,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,python,pycharm,linux,jupyternotebooks
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,python,pycharm,visualstudiocode,linux,jupyternotebooks,direnv,dotenv
