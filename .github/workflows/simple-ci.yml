@@ -13,10 +13,10 @@ jobs:
       #----------------------------------------------
       #       check-out repo and set-up python
       #----------------------------------------------
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
-            python-version: '3.10'
+            python-version: '3.11'
       #----------------------------------------------
       #        load pip cache if cache exists
       #----------------------------------------------
@@ -40,7 +40,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ "ubuntu-latest", "macos-latest" ]
-        python-version: [ "3.10"]
+        python-version: [ "3.11"]
     runs-on: ${{ matrix.os }}
     steps:
       #----------------------------------------------
@@ -80,7 +80,7 @@ jobs:
       # install your root project, if required
       #----------------------------------------------
       - name: Install library
-        run: poetry install --no-interaction
+        run: poetry install --no-interaction --no-root
       #----------------------------------------------
       #    run test suite
       #----------------------------------------------

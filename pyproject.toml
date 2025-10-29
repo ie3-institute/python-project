@@ -6,13 +6,15 @@ authors = ["Thomas <thomas.oberliessen@googlemail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.2"
+jupyter = "~=1.1.0"
+black = { extras = ["jupyter"], version = "~25.9.0" }
 flake8 = "^7.3.0"
-flake8-black = "^0.3.6"
-flake8-isort = "^6.1.2"
+flake8-black = "^0.4.0"
+flake8-isort = "^7.0.0"
 pre-commit = "^4.3.0"
 PyYAML = "^6.0"
 
