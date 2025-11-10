@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.4.2"
+pytest = "^9.0.0"
 jupyter = "~=1.1.0"
 black = { extras = ["jupyter"], version = "~25.9.0" }
 flake8 = "^7.3.0"
